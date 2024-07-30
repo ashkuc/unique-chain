@@ -44,7 +44,7 @@ describe('integration test: Fungible functionality:', () => {
     expect(aliceBalance).to.be.equal(U128_MAX);
   });
 
-  itSub('RPC method tokenOnewrs for fungible collection and token', async ({helper}) => {
+  itSub('RPC method tokenOwners for fungible collection and token', async ({helper}) => {
     const ethAcc = {Ethereum: '0x67fb3503a61b284dc83fa96dceec4192db47dc7c'};
     const facelessCrowd = (await helper.arrange.createAccounts(Array(7).fill(0n), donor)).map(keyring => ({Substrate: keyring.address}));
 
